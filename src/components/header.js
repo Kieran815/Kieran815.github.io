@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../assets/logo.svg';
 import SocialIcons from './social-icons';
 import { socialIconList } from './_config/social-icon-list';
@@ -15,6 +15,7 @@ const StyledHeader = styled.header`
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-left);
 `;
+
 const StyledContainer = styled.div`
   display: flex;
   align-items: center;
@@ -23,9 +24,11 @@ const StyledContainer = styled.div`
   width: 100%;
   padding: 0 calc((var(--space) / 2));
 `;
+
 const StyledHomeLink = styled(Link)`
   text-decoration: none;
 `;
+
 const StyledLogo = styled(Logo)`
   width: var(--header-height);
   height: var(--header-height);
@@ -35,6 +38,7 @@ const StyledLogo = styled(Logo)`
     fill: var(--primary-color);
   }
 `;
+
 const StyledNav = styled.nav`
   flex: 1;
   height: 100%;
@@ -53,6 +57,7 @@ const StyledNav = styled.nav`
     }
   }
 `;
+
 const StyledNavLink = styled(Link)`
   position: relative;
   margin: 0 0.5rem;
@@ -76,25 +81,47 @@ const StyledNavLink = styled(Link)`
   }
 `;
 
-const Header = ({ menuLinks }) => (
-  <StyledHeader>
-    <StyledContainer>
-      <StyledHomeLink title="logo" to="/">
-        <StyledLogo />
-      </StyledHomeLink>
-      <StyledNav>
-        {menuLinks.map((link, index) => (
-          <StyledNavLink key={link.name} to={link.link} activeClassName="active">
-            <StyledIndexNumber>{`${String(index + 1).padStart(2, '0')}.`}</StyledIndexNumber>
-            {link.name}
-          </StyledNavLink>
-        ))}
-      </StyledNav>
-      <SocialIcons icons={socialIconList} />
-    </StyledContainer>
-  </StyledHeader>
-);
+const Header = ({ menuLinks }) => {
 
+  return(
+    <StyledHeader>
+      <StyledContainer>
+        <StyledHomeLink title="logo" to="/">
+          <StyledLogo />
+        </StyledHomeLink>
+          <StyledNav id='nav'>
+            {menuLinks.map((link, index) => (
+              <StyledNavLink key={link.name} to={link.link} activeClassName="active">
+                <StyledIndexNumber>{`${String(index + 1).padStart(2, '0')}.`}</StyledIndexNumber>
+                {link.name}
+              </StyledNavLink>
+            ))}
+          </StyledNav>
+        {/* <StyledNav id='nav'>
+          {menuLinks.map((link, index) => (
+            <StyledNavLink key={link.name} to={link.link} activeClassName="active">
+              <StyledIndexNumber>{`${String(index + 1).padStart(2, '0')}.`}</StyledIndexNumber>
+              {link.name}
+            </StyledNavLink>
+          ))}
+        </StyledNav>
+        <HamburgerMenu
+          id="hamburgerMenu"
+          isOpen={open}
+          menuClicked={() => setOpen(!open)}
+          width={18}
+          height={15}
+          strokeWidth={1}
+          rotate={0}
+          color='white'
+          borderRadius={0}
+          animationDuration={0.5}
+        /> */}
+        <SocialIcons icons={socialIconList} />
+      </StyledContainer>
+    </StyledHeader>
+  );
+}
 export default Header;
 
 const menuLinksPropTypeShape = PropTypes.shape({

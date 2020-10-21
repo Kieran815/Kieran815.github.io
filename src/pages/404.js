@@ -4,7 +4,7 @@ import SmileyDead from '../assets/smiley-dead.svg';
 import Layout from '../components/layout';
 import TextLink from '../components/links/text-link';
 import SEO from '../components/seo';
-import { blogMenuLinks } from '../components/_config/menu-links';
+import { indexMenuLinks } from '../components/_config/menu-links';
 import { flexCenter } from '../components/_shared/styled-mixins';
 import { StyledSection } from '../components/_shared/styled-section';
 
@@ -34,14 +34,14 @@ const StyledDescription = styled.p`
 `;
 
 const NotFoundPage = () => (
-  <Layout menuLinks={blogMenuLinks}>
+  <Layout menuLinks={indexMenuLinks}>
     <Styled404Section>
       <SEO title="404: Not found" />
-      <StyledIntroduction>Oops!...It happened again</StyledIntroduction>
+      <StyledIntroduction>Wait a second...</StyledIntroduction>
       <Styled404Text>
-        4<SmileyDead />4
+        404: Page Not Found!!!
       </Styled404Text>
-      <StyledDescription>Sorry, we couldn't find the page you were looking for.</StyledDescription>
+      <StyledDescription>Are you sure we're going the right way?</StyledDescription>
       <TextLink label="Take me home" link="/" />
     </Styled404Section>
   </Layout>

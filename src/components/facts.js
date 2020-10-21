@@ -48,8 +48,8 @@ const Facts = () => {
       <StyledH1>Some Interesting Facts</StyledH1>
       <StyledLogoSection>
         <StyledFactNumber>
-          <span className="number">127</span>
-          <span className="fact">Finished Projects</span>
+          <span className="number">53</span>
+          <span className="fact">Github Repositories</span>
         </StyledFactNumber>
         <StyledFactNumber>
           <span className="number">321</span>

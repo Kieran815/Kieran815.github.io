@@ -1,9 +1,7 @@
 ---
-phone: '+49 1234 5678910'
-email: 'maxmustermann@gmail.com'
-address: 'Friesenstr. 123, Berlin, Germany'
+phone: 'Google Voice: (708) 629-6259'
+email: 'kieran.milligan@gmail.com'
+address: 'Chicago, IL'
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-sed diam nonumy [Link to issues](https://github.com/Knochenmark/gatsby-starter-level-2/issues) tempor invidunt ut labore
-et dolore magna aliquyam erat, sed diam voluptua.
+I would love to work with You!!! Feel free to reach out to me and schedule a meeting or video call. For a complete work history documenting my journey, visit my <a href="https://www.linkedin.com/in/kieran-m-5201716a/" target="_blank" rel="noopener noreferrer" >LinkedIn</a> and <a href="https://www.github.com/Kieran815" target="_blank" rel="noopener noreferrer">Github</a> profiles.

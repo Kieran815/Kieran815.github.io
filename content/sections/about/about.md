@@ -1,11 +1,11 @@
 ---
-title: 'The Gatsby starter that makes developer dreams come true!'
+title: 'Helping to Build the Future'
 about_image: './me.jpg'
 techs: ['Gatsby', 'Javascript', 'React', 'GraphQL', 'Emotion', 'Stylus']
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas sit amet arcu tincidunt fermentum. Mauris ac nisl nibh. Etiam nunc eros, blandit vel eros laoreet, accumsan lacinia turpis.
+After 20 years in Sales, it was time for something different. I began coding in the Fall of 2018 and have fallen in love. After 18 months of self-study and freelancing, I took the jump and enrolled in MicroTrain's Agile Web Development Bootcamp.
 
-Phasellus ut sagittis eros. Curabitur quis libero consequat, iaculis dolor sollicitudin, ultricies ligula. Donec sodales sed ex a fermentum. Quisque vitae efficitur odio, non aliquam sapien.
+I am committed to becoming a Professional Web Developer. I started out making some pretty cool front-end apps with React, then started learning Gatsby.
 
-Proin egestas luctus ornare. Donec maximus est lobortis, pharetra dolor in, convallis lorem. Duis ut erat in lectus faucibus iaculis. In tincidunt laoreet ante, vel pellentesque risus lacinia eu.
+I mostly deploy with Firebase, but have deployed to several content mangement systems and hosting platforms. I love to rock a good JAM stack.

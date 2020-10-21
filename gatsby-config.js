@@ -1,12 +1,12 @@
 module.exports = {
-  pathPrefix: '/gatsby-starter-level-2',
+  pathPrefix: '/portfolio',
   siteMetadata: {
-    title: 'Level 2',
+    title: 'Kieran Milligan, Web Developer',
     titleTemplate: '%s · Level 2',
     image: '/images/logo.png',
-    author: 'Max Mustermann',
-    description: 'Gatsby starter to quickly setup your portfolio and boost it to the next level.',
-    url: 'https://knochenmark.github.io',
+    author: 'Kieran Milligan',
+    description: 'Project Portfolio for Kieran M Milligan, JavaScript and Web Developer',
+    url: 'https://kmilligan.info',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
@@ -24,13 +24,6 @@ module.exports = {
       options: {
         name: 'projects',
         path: `${__dirname}/content/projects`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/content/posts`,
       },
     },
     {

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React from 'react';
-import ButtonLink from './links/button-link';
 import ScrollIndicator from './scroll-indicator';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
@@ -48,7 +47,7 @@ const StyledDescription = styled.div`
 `;
 
 const Hero = ({ data }) => {
-  const { introduction, author, tagline, description, ctaLink, ctaLabel } = data;
+  const { introduction, author, tagline, description } = data;
 
   return (
     <StyledHeroSection>
@@ -56,7 +55,6 @@ const Hero = ({ data }) => {
       <StyledAuthor>{author}</StyledAuthor>
       <StyledTagline>{tagline}</StyledTagline>
       <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
-      <ButtonLink label={ctaLabel} link={ctaLink} />
       <ScrollIndicator />
     </StyledHeroSection>
   );

@@ -7,7 +7,7 @@ import React from 'react';
 import '../styles/index.styl';
 import Footer from './footer';
 import Header from './header';
-import NavigationBar from './nagivation-bar';
+import NavigationBar from './navigation-bar';
 import ScrollToTop from './scroll-to-top';
 
 library.add(fab, fas);
