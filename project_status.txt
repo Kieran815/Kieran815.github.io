@@ -1,0 +1,56 @@
+COMPLETED:
+
+
+comics quiz game:
+        https://kieran815.github.io/quiz-game/
+its gon rain:
+        https://kieran815.github.io/game/
+super hero search:
+        https://kieran815.github.io/super-hero-search/
+Faces of Dune (Carousel)
+        https://kieran815.github.io/carousel/
+Tic-React-Toe
+        https://kieran815.github.io/tic-react-toe/
+react-to-do
+        https://kieran815.github.io/react-to-do/
+
+
+TO FIX:
+
+memory game
+        https://kieran815.github.io/memory-game/
+                -- pics not sourcing
+shopping cart basic
+        https://kieran815.github.io/products
+                -- should start on products page
+seasons_geotracking
+                -- check maps api, change css for first child
+Baphomet's Run
+                -- it's too awesome to not finish
+
+
+TO CHECK/DEPLOY:
+
+draw
+gatsby-boot-camp
+TourOfHeroes
+minesweeper
+
+
+
+NOT FOR DEPLOY:
+
+chat-it-up (socket.io)
+        -too basic
+
+
+PICK BEST APOD:
+https://github.com/Kieran815/vanilla-apod
+https://github.com/Kieran815/jquery-apod
+https://github.com/Kieran815/ng-apod
+
+ADDED TO PORTFOLIO:
+  dads site:
+    revmmilligan.com
+  image-tiles:
+    https://kieran815.github.io/image_tiles/
