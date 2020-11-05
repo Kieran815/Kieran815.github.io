@@ -5,6 +5,11 @@ export const socialIconList = [
     link: 'https://twitter.com/NoLivesMatter42',
   },
   {
+    name: 'linkedin',
+    prefix: 'fab',
+    link: 'https://www.linkedin.com/in/kieran-milligan'
+  },
+  {
     name: 'github',
     prefix: 'fab',
     link: 'https://github.com/Kieran815',

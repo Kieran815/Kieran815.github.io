@@ -10,6 +10,11 @@ export const indexMenuLinks = [
     icon: 'terminal',
   },
   {
+    name: 'Resume',
+    link: '/#resume',
+    icon: '/'
+  },
+  {
     name: 'Contact',
     link: '/#contact',
     icon: 'envelope',

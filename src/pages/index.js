@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../components/about';
 import CardGrid from '../components/card-grid';
 import Contact from '../components/contact';
+import Resume from '../components/resume';
 import FeaturedProjects from '../components/featured-projects';
 import Hero from '../components/hero';
 import Facts from '../components/facts';
@@ -27,6 +28,7 @@ const Index = ({ data }) => {
       <Hero data={heroData} />
       <Facts/>
       <About data={data.about} />
+      <Resume />
       <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Features" id="features" />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
       <Contact data={data.contact} />
