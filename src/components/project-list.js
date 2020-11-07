@@ -7,7 +7,20 @@ import { StyledContentLink } from './_shared/styled-content-link';
 import { StyledH2 } from './_shared/styled-headings';
 import { flexEnd } from './_shared/styled-mixins';
 import { StyledTextSection } from './_shared/styled-text-section';
+// *** END ORIGINAL PROJECT LIST IMPORTS ***
 
+// *** START FEATURED PROJECT IMPORTS ***
+import Img from 'gatsby-image';
+import TextLink from './links/text-link';
+import { mq } from './_shared/media';
+import { StyledImageContainer } from './_shared/styled-image-container';
+import { StyledSection } from './_shared/styled-section';
+// *** REMOVE BELOW IMPORT AND ADD TO ORIGINAL IMPORTS WHEN FUNCTIONAL
+import { StyledH1 } from './_shared/styled-headings';
+import { contentBox, flexCenter } from './_shared/styled-mixins';
+// *** END FEATURED PROJECT IMPORTS ***
+
+// *** START ORIGINAL PROJECT LIST VARIABLES ***
 const StyledProject = styled.article`
   display: flex;
   flex-direction: column;
@@ -50,7 +63,10 @@ const StyledProjectText = styled(StyledTextSection)`
     overflow: hidden;
   }
 `;
+// *** END ORIGINAL PROJECT LIST VARIABLES ***
 
+
+// // *** START MERGED PROJECT LIST COMPONENT ***
 const ProjectList = ({ projects }) => {
   return projects.map((project) => {
     const title = project.frontmatter.title;
@@ -92,3 +108,49 @@ ProjectList.propTypes = {
 };
 
 export default ProjectList;
+
+// // *** END MERGED PROJECT LIST COMPONENT ***
+
+{/*  *** START ORIGINAL PROJECT LIST ***
+const ProjectList = ({ projects }) => {
+  return projects.map((project) => {
+    const title = project.frontmatter.title;
+    const demoLink = project.frontmatter.demo_link;
+    const repoLink = project.frontmatter.repo_link;
+    const demoLinkLabel = `featured project ${title} demo`;
+    const repoLinkLabel = `featured project ${title} repo`;
+
+    return (
+      <StyledProject key={title}>
+        <StyledHeader>
+          <StyledContentLink href={demoLink ? demoLink : repoLink ? repoLink : '#'} target="_blank" rel="noopener">
+            <StyledH2>{title}</StyledH2>
+          </StyledContentLink>
+          <StyledLinkContainer>
+            {repoLink && (
+              <a href={repoLink} target="_blank" rel="noopener noreferrer" title="Repository Link" aria-label={repoLinkLabel}>
+                <Icon icon="github" prefix="fab" />
+              </a>
+            )}
+            {demoLink && (
+              <a href={demoLink} target="_blank" rel="noopener noreferrer" title="Demo Link" aria-label={demoLinkLabel}>
+                <Icon icon="external-link-alt" />
+              </a>
+            )}
+          </StyledLinkContainer>
+        </StyledHeader>
+        <StyledInfoContainer>
+          <StyledProjectText dangerouslySetInnerHTML={{ __html: project.html }} />
+          <TechList techs={project.frontmatter.techs} />
+        </StyledInfoContainer>
+      </StyledProject>
+    );
+  });
+};
+
+ProjectList.propTypes = {
+  projects: PropTypes.array.isRequired,
+};
+
+export default ProjectList;
+ *** END ORIGINAL PROJECT LIST *** */}
