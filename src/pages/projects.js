@@ -33,10 +33,7 @@ export default Projects;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: frontmatter___date }
-      filter: { fileAbsolutePath: { regex: "/content/projects/" }, frontmatter: { featured: { eq: false } } }
-    ) {
+    allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}, filter: {fileAbsolutePath: {regex: "/content/projects/"}, frontmatter: {featured: {eq: false}}}) {
       nodes {
         frontmatter {
           date(formatString: "D MMMM, YYYY")
@@ -44,6 +41,19 @@ export const pageQuery = graphql`
           repo_link
           demo_link
           techs
+          cover_image {
+            childImageSharp {
+              fluid {
+                originalImg
+                originalName
+                sizes
+                src
+              }
+              original {
+                src
+              }
+            }
+          }
         }
         html
       }

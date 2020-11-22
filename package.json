@@ -1,10 +1,10 @@
 {
   "homepage": "https://knochenmark.github.io/gatsby-starter-level-2/",
-  "name": "gatsby-starter-level-2",
+  "name": "kieran-milligan-portfolio",
   "private": true,
-  "description": "A minimalistic starter to quickly set up and configure your portfolio with Gatsby",
-  "version": "0.1.0",
-  "author": "Knochenmark",
+  "description": "Project portfolio with Gatsby",
+  "version": "1.1.0",
+  "author": "Kieran Milligan",
   "scripts": {
     "deploy": "gatsby build --prefix-paths",
     "build": "gatsby build",
