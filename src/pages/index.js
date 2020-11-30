@@ -2,7 +2,6 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import About from '../components/about';
-import CardGrid from '../components/card-grid';
 import Contact from '../components/contact';
 import Resume from '../components/resume';
 import FeaturedProjects from '../components/featured-projects';
@@ -29,7 +28,6 @@ const Index = ({ data }) => {
       <Facts/>
       <About data={data.about} />
       <Resume />
-      <CardGrid cards={data.cards.frontmatter.cards} description={data.cards.html} title="Our Features" id="features" />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
       <Contact data={data.contact} />
     </Layout>
@@ -86,7 +84,7 @@ export const query = graphql`
     }
 
     featuredProjects: allMarkdownRemark(
-      limit: 3
+      limit: 10
       sort: { order: DESC, fields: frontmatter___date }
       filter: { fileAbsolutePath: { regex: "/content/projects/" }, frontmatter: { featured: { eq: true } } }
     ) {

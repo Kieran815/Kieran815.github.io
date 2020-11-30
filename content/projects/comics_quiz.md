@@ -1,5 +1,5 @@
 ---
-featured: false
+featured: true
 date: '2020-08'
 title: 'Comics Quiz'
 cover_image: './images/comics_quiz.jpg'
