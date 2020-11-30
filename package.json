@@ -1,12 +1,13 @@
 {
-  "homepage": "https://knochenmark.github.io/gatsby-starter-level-2/",
+  "homepage": "https://kieran815.github.io/",
   "name": "kieran-milligan-portfolio",
   "private": true,
   "description": "Project portfolio with Gatsby",
   "version": "1.1.0",
   "author": "Kieran Milligan",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
@@ -46,6 +47,7 @@
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-plugin-react": "^7.21.5",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.1.2"
   },
   "keywords": [
