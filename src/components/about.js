@@ -7,6 +7,7 @@ import { StyledH1, StyledH2 } from './_shared/styled-headings';
 import { StyledStaticImageContainer } from './_shared/styled-image-container';
 import { StyledSection } from './_shared/styled-section';
 
+
 const StyledAboutContainer = styled.article`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -17,6 +18,14 @@ const StyledAboutContainer = styled.article`
     grid-template-columns: repeat(2, 1fr);
   }
 `;
+
+const StyledContainer = styled.div`
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 2em;
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
+`
+
 const StyledTextSection = styled.section`
   white-space: pre-line;
 `;
@@ -31,6 +40,7 @@ const About = ({ data }) => {
 
   return (
     <StyledSection id="about">
+      <StyledContainer>
       <StyledH1>About Me</StyledH1>
       <StyledAboutContainer>
         {image && (
@@ -44,6 +54,7 @@ const About = ({ data }) => {
           <TechList techs={techs} />
         </div>
       </StyledAboutContainer>
+      </StyledContainer>
     </StyledSection>
   );
 };

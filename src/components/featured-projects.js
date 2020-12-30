@@ -17,7 +17,6 @@ const StyledFeaturedProject = styled.article`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2.5rem;
   padding: 2.5rem 0;
-
   ${mq.gt.sm} {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -28,8 +27,13 @@ const StyledFeaturedProject = styled.article`
     direction: ltr;
   }
 `;
+
 const StyledProjectInfoContainer = styled.section`
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
   display: flex;
+  padding: 1em;
   flex-direction: column;
   position: relative;
 `;
@@ -37,6 +41,7 @@ const StyledDescription = styled.section`
   ${contentBox}
   max-height: 180px;
   position: relative;
+  margin: 10px;
   padding: 10px;
 
   > p {
@@ -66,9 +71,12 @@ const StyledLinkContainer = styled.section`
   }
 `;
 const StyledArchiveContainer = styled.div`
-  ${flexCenter};
-  width: 100%;
+  margin: auto;
+  width: 50%;
   margin-top: 2.5rem;
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
 `;
 
 const FeaturedProjects = ({ featured }) => {
@@ -82,6 +90,7 @@ const FeaturedProjects = ({ featured }) => {
     const repoLinkLabel = `featured project ${title} repo`;
 
     return (
+
       <StyledFeaturedProject key={title + index}>
         <a
           aria-label={demoLink ? demoLinkLabel : repoLink ? repoLinkLabel : `featured project ${title}`}

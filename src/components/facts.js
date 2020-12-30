@@ -42,24 +42,33 @@ const StyledFactNumber = styled.section`
   }
 `;
 
+const StyledContainer = styled.div`
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.5), rgba(189, 195, 199, 0.5));
+  padding: 2em;
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
+`
+
 const Facts = () => {
   return (
     <StyledSkewedSection angle={10}>
-      <StyledH1>Some Interesting Facts</StyledH1>
-      <StyledLogoSection>
-        <StyledFactNumber>
-          <span className="number">53</span>
-          <span className="fact">Github Repositories</span>
-        </StyledFactNumber>
-        <StyledFactNumber>
-          <span className="number">321</span>
-          <span className="fact">Happy Customers</span>
-        </StyledFactNumber>
-        <StyledFactNumber>
-          <span className="number">863</span>
-          <span className="fact">Freelancing Hours</span>
-        </StyledFactNumber>
-      </StyledLogoSection>
+      <StyledContainer>
+        <StyledH1>Some Interesting Facts</StyledH1>
+        <StyledLogoSection>
+          <StyledFactNumber>
+            <span className="number">53</span>
+            <span className="fact">Github Repositories</span>
+          </StyledFactNumber>
+          <StyledFactNumber>
+            <span className="number">321</span>
+            <span className="fact">Happy Customers</span>
+          </StyledFactNumber>
+          <StyledFactNumber>
+            <span className="number">863</span>
+            <span className="fact">Freelancing Hours</span>
+          </StyledFactNumber>
+        </StyledLogoSection>
+      </StyledContainer>
     </StyledSkewedSection>
   );
 };

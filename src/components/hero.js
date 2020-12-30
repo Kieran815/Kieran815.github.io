@@ -7,12 +7,18 @@ import { StyledSection } from './_shared/styled-section';
 
 const StyledHeroSection = styled(StyledSection)`
   min-height: calc(100vh - 2 * var(--header-height));
-  position: relative;
-
   ${mq.gt.sm} {
     min-height: calc(100vh - var(--header-height));
   }
 `;
+
+const StyledContainer = styled.div`
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 2em;
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
+`
+
 const StyledIntroduction = styled.div`
   color: var(--primary-color);
   font-weight: normal;
@@ -51,11 +57,13 @@ const Hero = ({ data }) => {
 
   return (
     <StyledHeroSection>
-      <StyledIntroduction>{introduction}</StyledIntroduction>
-      <StyledAuthor>{author}</StyledAuthor>
-      <StyledTagline>{tagline}</StyledTagline>
-      <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
-      <ScrollIndicator />
+      <StyledContainer>
+        <StyledIntroduction>{introduction}</StyledIntroduction>
+        <StyledAuthor>{author}</StyledAuthor>
+        <StyledTagline>{tagline}</StyledTagline>
+        <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
+        <ScrollIndicator />
+      </StyledContainer>
     </StyledHeroSection>
   );
 };

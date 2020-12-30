@@ -24,7 +24,9 @@ const Index = ({ data }) => {
   return (
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
+      <div className="parallaxOne">
       <Hero data={heroData} />
+      </div>
       <Facts/>
       <About data={data.about} />
       <Resume />

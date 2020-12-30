@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: '/b',
   siteMetadata: {
     title: 'Kieran Milligan, Web Developer',
-    titleTemplate: '%s · Level 2',
+    titleTemplate: '%s · Home',
     image: '/images/logo.png',
     author: 'Kieran Milligan',
     description: 'Project Portfolio for Kieran M Milligan, JavaScript and Web Developer',
