@@ -8,13 +8,11 @@ const StyledSkewedSection = styled.section`
   margin: 6rem 0;
   position: relative;
   padding: calc(100% * ${skewNumber}) 0;
-
   & > .content {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1.5em;
     position: relative;
-    z-index: 5;
     /* uncomment for debugging purposes */
     /* border: 2px dashed #fff8; */
   }
@@ -26,7 +24,7 @@ const StyledSkewedSection = styled.section`
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: -5;
     transform: skewy(-11deg);
     transform-origin: 50% 0;
     outline: 1px solid transparent;

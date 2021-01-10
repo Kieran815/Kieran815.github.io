@@ -51,17 +51,17 @@
     "prettier": "^2.1.2"
   },
   "keywords": [
-    "gatsby",
-    "starter",
+    "javascript",
+    "development",
     "portfolio",
-    "blog"
+    "react",
+    "sass",
+    "scss",
+    "graphql"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/knochenmark/gatsby-starter-level-2"
-  },
-  "bugs": {
-    "url": "https://github.com/knochenmark/gatsby-starter-level-2/issues"
+    "url": "https://github.com/Kieran815/portfolio-dev"
   }
 }

@@ -34,7 +34,8 @@ const StyledNavLink = styled(Link)`
   line-height: 1;
   position: relative;
   height: var(--header-height);
-
+  z-index: 20;
+  
   > svg {
     margin-bottom: 0.4rem;
     fill: var(--title-color);

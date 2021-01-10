@@ -1,23 +1,25 @@
-import { css } from '@emotion/core';
+import {
+  css
+} from '@emotion/core';
 
-export const flexCenter = css`
+export const flexCenter = css `
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-export const flexEnd = css`
+export const flexEnd = css `
   display: flex;
   justify-content: flex-end;
   align-items: center;
 `;
 
-export const flexWrap = css`
+export const flexWrap = css `
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const contentBox = css`
+export const contentBox = css `
   background-color: var(--bg-content-color);
   max-width: var(--content-width);
   margin: 0 auto;

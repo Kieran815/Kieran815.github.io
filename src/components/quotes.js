@@ -9,6 +9,7 @@ const StyledQuote = styled.section`
   flex-direction: column;
   align-items: flex-end;
   padding: 1rem;
+  width: 100%;
 
   & > .author {
     background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
