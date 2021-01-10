@@ -28,10 +28,17 @@ const StyledFeaturedProject = styled.article`
   }
 `;
 
-const StyledProjectInfoContainer = styled.section`
+const StyledProjectContainer = styled.section`
   background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 4em;
+`;
+
+const StyledProjectInfoContainer = styled.section`
+  background-color: rgba(189, 195, 199, 0.3);
+  border-radius: 3em;
   backdrop-filter: blur(10px);
   display: flex;
   padding: 1em;
@@ -40,6 +47,7 @@ const StyledProjectInfoContainer = styled.section`
 `;
 const StyledDescription = styled.section`
   ${contentBox}
+  background-color: rgba(0, 0, 0, 0.6);
   max-height: 180px;
   position: relative;
   margin: 10px;
@@ -130,11 +138,13 @@ const FeaturedProjects = ({ featured }) => {
 
   return (
     <StyledSection id="projects">
-      <StyledH1>Featured Projects</StyledH1>
-      {featuredProjects}
-      <StyledArchiveContainer>
-        <TextLink label="View More Projects" link="/projects" />
-      </StyledArchiveContainer>
+      <StyledProjectContainer>
+        <StyledH1>Featured Projects</StyledH1>
+        {featuredProjects}
+        <StyledArchiveContainer>
+          <TextLink label="View More Projects" link="/projects" />
+        </StyledArchiveContainer>
+      </StyledProjectContainer>
     </StyledSection>
   );
 };

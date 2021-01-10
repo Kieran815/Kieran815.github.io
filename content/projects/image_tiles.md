@@ -3,8 +3,8 @@ featured: false
 date: '2020-04'
 title: 'Image Tiles'
 cover_image: './images/imageTiles.jpeg'
-repo_link: 'https://github.com/Knochenmark/recipebox'
-demo_link: 'https://knochenmark.github.io/recipebox/'
+repo_link: 'https://github.com/Kieran815//image_tiles/'
+demo_link: 'https://kieran815.github.io/image_tiles/'
 techs: ['React', 'Axios', 'Semantic UI']
 ---
 

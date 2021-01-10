@@ -1,6 +1,6 @@
 ---
 title: 'Helping to Build the Future'
-about_image: './me.jpg'
+about_image: './ProfilePic.jpg'
 techs: ['HTML', 'MarkDown', 'CSS3', 'Sass', 'Bootstrap', 'Material Design', 'Semantic-UI', 'Font Awesome', 'JavaScript', 'ES6', 'React', 'Angular', 'JSX', 'Gatsby', 'NodeJS', 'NPM', 'Express', 'MongoDB', 'Mongoose', 'Git', 'Github', 'Gulp', "RESTful API's"]
 ---
 

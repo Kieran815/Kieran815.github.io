@@ -7,7 +7,7 @@ const Resume = () => {
       <br />
       <br />
       <section className="card">
-        <h1 className="res-hl">Kieran Milligan</h1>
+        <h1 className="res-hl" style={{ color: 'white' }}>Kieran Milligan</h1>
         <div className="res-hl-con">
           <a href="https://www.google.com/maps/@41.9780324,-87.6462852,12z" target="_blank" rel="noopener noreferrer">Chicago, IL</a>
           &emsp; &#x25CF; &emsp;
