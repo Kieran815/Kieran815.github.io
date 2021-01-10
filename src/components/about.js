@@ -13,7 +13,6 @@ const StyledAboutContainer = styled.article`
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 2.5rem;
   padding: 2.5rem 0;
-
   ${mq.gt.sm} {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -24,6 +23,7 @@ const StyledContainer = styled.div`
   padding: 2em;
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
+  backdrop-filter: blur(10px);
 `
 
 const StyledTextSection = styled.section`

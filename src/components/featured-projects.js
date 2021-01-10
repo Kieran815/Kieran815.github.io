@@ -32,6 +32,7 @@ const StyledProjectInfoContainer = styled.section`
   background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
+  backdrop-filter: blur(10px);
   display: flex;
   padding: 1em;
   flex-direction: column;
@@ -54,7 +55,6 @@ const StyledDescription = styled.section`
 const StyledLinkContainer = styled.section`
   ${flexEnd};
   margin: 10px 0;
-
   & > a {
     display: flex;
     justify-content: center;
@@ -75,6 +75,7 @@ const StyledArchiveContainer = styled.div`
   width: 50%;
   margin-top: 2.5rem;
   background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(10px);
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
 `;

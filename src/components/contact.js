@@ -6,7 +6,13 @@ import { StyledH1 } from './_shared/styled-headings';
 import { StyledSection } from './_shared/styled-section';
 
 const StyledContactSection = styled(StyledSection)`
+  margin-top: 70px;
   margin-bottom: 70px;
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  padding: 2em;
+  border-radius: 3em;
+  border: 2px solid rgba(189, 195, 199, 0.3);
+  backdrop-filter: blur(10px);
 `;
 const StyledContainer = styled.section`
   display: flex;

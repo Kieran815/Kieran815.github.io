@@ -39,6 +39,7 @@ const StyledInfoContainer = styled.section`
   flex-direction: column;
   position: relative;
 `;
+
 const StyledProjectText = styled(StyledTextSection)`
   > p {
     display: -webkit-box;

@@ -6,7 +6,7 @@ import Contact from '../components/contact';
 import Resume from '../components/resume';
 import FeaturedProjects from '../components/featured-projects';
 import Hero from '../components/hero';
-import Facts from '../components/facts';
+import Quotes from '../components/quotes';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { indexMenuLinks } from '../components/_config/menu-links';
@@ -27,10 +27,10 @@ const Index = ({ data }) => {
       <div className="parallaxOne">
       <Hero data={heroData} />
       </div>
-      <Facts/>
+      <Quotes/>
       <About data={data.about} />
-      <Resume />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
+      <Resume />
       <Contact data={data.contact} />
     </Layout>
   );

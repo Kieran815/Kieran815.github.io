@@ -3,11 +3,23 @@
   flex-direction column
   align-items center
   padding 3em
+  background-image url('../images/nebula_bg.jpg')
+  background-position center
+  background-attachment fixed
+  background-size 100vw 100vh
   background-color var(--bg-content-color)
 
 .card
-h3
+  background-image linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6))
+  backdrop-filter blur(10px)
+  background-clip padding-box
+  padding 3em
+  margin 0.5em
+  border-radius 3em
+  border 2px solid rgba(189, 195, 199, 0.3)
+h1, h2, h3
   text-align center
+  margin 0 0 0.5em 0
 tr
   display flex
   flex-wrap wrap
@@ -36,3 +48,22 @@ td
   display flex
   flex-direction row
   justify-content space-between
+
+
+.resume-link
+  margin auto
+  width 50%
+  margin-top 2.5rem
+  background-image linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6))
+  backdrop-filter blur(10px)
+  border 2px solid rgba(189, 195, 199, 0.3)
+  border-radius 3em
+  text-align center
+
+
+@media (max-width: 600px)
+  #resume
+    padding 0.5em
+
+  .card
+    padding 1.5em

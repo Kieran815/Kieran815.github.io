@@ -15,7 +15,11 @@ const marginMediaQuery = css`
 const StyledFooter = styled.footer`
   ${flexCenter};
   flex-direction: column;
-  background-color: var(--bg-content-color);
+  background-color: rgba(46, 49, 49, 0.6);
+  backdrop-filter: blur(10px);
+  bottom: 0px;
+  z-index: 5;
+  width: 100%;
   padding: calc((var(--space) / 2));
   text-align: center;
   font-size: 0.8rem;

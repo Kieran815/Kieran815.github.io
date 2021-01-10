@@ -12,7 +12,7 @@ export const indexMenuLinks = [
   {
     name: 'Resume',
     link: '/#resume',
-    icon: '/'
+    icon: 'file-word',
   },
   {
     name: 'Contact',

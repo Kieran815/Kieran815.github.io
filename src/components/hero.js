@@ -17,6 +17,7 @@ const StyledContainer = styled.div`
   padding: 2em;
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
+  backdrop-filter: blur(20px);
 `
 
 const StyledIntroduction = styled.div`
@@ -62,8 +63,8 @@ const Hero = ({ data }) => {
         <StyledAuthor>{author}</StyledAuthor>
         <StyledTagline>{tagline}</StyledTagline>
         <StyledDescription dangerouslySetInnerHTML={{ __html: description }} />
-        <ScrollIndicator />
       </StyledContainer>
+      <ScrollIndicator />
     </StyledHeroSection>
   );
 };

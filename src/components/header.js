@@ -11,7 +11,11 @@ import { StyledIndexNumber } from './_shared/styled-index-number';
 const StyledHeader = styled.header`
   height: var(--header-height);
   flex-shrink: 0;
-  background-color: var(--bg-content-color);
+  background-color: rgba(46, 49, 49, 0.6);
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  backdrop-filter: blur(10px);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-left);
 `;

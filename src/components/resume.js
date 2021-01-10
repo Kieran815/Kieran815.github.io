@@ -102,7 +102,7 @@ const Resume = () => {
 
         <div>
           <p className="res-sch-date">
-            <span><a href="https://www.microtrain.net/programs/view/agile-full-stack-web-and-hybrid-mobile-application-development" target="_blank" rel="noopener noreferrer">MicroTrain</a> - Chicago, IL</span>
+            <span><u><a href="https://www.microtrain.net/programs/view/agile-full-stack-web-and-hybrid-mobile-application-development" target="_blank" rel="noopener noreferrer">MicroTrain</a> - Chicago, IL</u></span>
             <span>June 2020 - October 2020</span>
           </p>
           <strong>Agile Full Stack Web and Hybrid Mobile Application Development Certification</strong>
@@ -112,7 +112,7 @@ const Resume = () => {
 
         <div>
           <p className="res-sch-date">
-            <span><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> - Online</span>
+            <span><u><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a> - Online</u></span>
             <span>Ongoing</span>
           </p>
           <strong>
@@ -127,7 +127,9 @@ const Resume = () => {
       </section>
       <br />
       <br />
-      <a href="https://docs.google.com/document/d/1iNflTwAc3fSAzJ2OpGIHM9gRDLjK6CbTY7GYM6OllW8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Download my Resume from Google Docs</a>
+      <section className="resume-link">
+        <a href="https://docs.google.com/document/d/1iNflTwAc3fSAzJ2OpGIHM9gRDLjK6CbTY7GYM6OllW8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Download my Resume from Google Docs</a>
+      </section>
     </main>
   );
 }
