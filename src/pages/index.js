@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../components/about';
 import Contact from '../components/contact';
 import Resume from '../components/resume';
+import ProgressBar from '../components/progressbar';
 import FeaturedProjects from '../components/featured-projects';
 import Hero from '../components/hero';
 import Quotes from '../components/quotes';
@@ -21,9 +22,12 @@ const Index = ({ data }) => {
     ctaLink: data.hero.frontmatter.cta_link,
   };
 
+
+
   return (
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
+      <ProgressBar />
       <div className="parallaxOne">
       <Hero data={heroData} />
       </div>

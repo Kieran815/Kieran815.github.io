@@ -8,4 +8,4 @@ demo_link: 'https://kieran815.github.io/image_tiles/'
 techs: ['React', 'Axios', 'Semantic UI']
 ---
 
-Image Search app. Built using React and Axios, Styled with Semantic UI. Application Programming Interface from [Unsplash](https://api.unsplash.com).
+Image Search app. Built using React and Axios, Styled with Semantic UI. Application Programming Interface from <a href="https://api.unsplash.com" target="blank" rel="noopener noreferrer">Unsplash</a>.

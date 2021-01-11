@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 date: '2020-03'
 title: 'React ToDo List'
 cover_image: './images/ReactToDo.jpg'
