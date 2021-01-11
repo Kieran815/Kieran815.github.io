@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/b',
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Kieran Milligan, Web Developer',
     titleTemplate: '%s · Home',
@@ -10,6 +10,7 @@ module.exports = {
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
+    
     `gatsby-plugin-stylus`,
     `gatsby-plugin-react-helmet`,
     {
