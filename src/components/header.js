@@ -37,7 +37,6 @@ const StyledLogo = styled(Logo)`
   width: var(--header-height);
   height: var(--header-height);
   fill: var(--title-color);
-
   &:hover path.level-2 {
     fill: var(--primary-color);
   }
@@ -86,21 +85,20 @@ const StyledNavLink = styled(Link)`
 `;
 
 const Header = ({ menuLinks }) => {
-
-  return(
+  return (
     <StyledHeader>
       <StyledContainer>
         <StyledHomeLink title="logo" to="/">
           <StyledLogo />
         </StyledHomeLink>
-          <StyledNav id='nav'>
-            {menuLinks.map((link, index) => (
-              <StyledNavLink key={link.name} to={link.link} activeClassName="active">
-                <StyledIndexNumber>{`${String(index + 1).padStart(2, '0')}.`}</StyledIndexNumber>
-                {link.name}
-              </StyledNavLink>
-            ))}
-          </StyledNav>
+        <StyledNav id="nav">
+          {menuLinks.map((link, index) => (
+            <StyledNavLink key={link.name} to={link.link} activeClassName="active">
+              <StyledIndexNumber>{`${String(index + 1).padStart(2, '0')}.`}</StyledIndexNumber>
+              {link.name}
+            </StyledNavLink>
+          ))}
+        </StyledNav>
         {/* <StyledNav id='nav'>
           {menuLinks.map((link, index) => (
             <StyledNavLink key={link.name} to={link.link} activeClassName="active">
@@ -125,7 +123,7 @@ const Header = ({ menuLinks }) => {
       </StyledContainer>
     </StyledHeader>
   );
-}
+};
 export default Header;
 
 const menuLinksPropTypeShape = PropTypes.shape({
