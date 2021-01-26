@@ -2,7 +2,7 @@
 featured: true
 date: '2020-03'
 title: 'FreeCodeCamp - Chicago Loop'
-cover_image: './images/ReactToDo.jpg'
+cover_image: './images/fcc-chicago.png'
 repo_link: 'https://github.com/kieran815/fcc-chicago'
 demo_link: 'https://kieran815.github.io/fcc-chicago/'
 techs: ['React', 'Styled Components', 'JavaScript', 'CSS3']

@@ -4,9 +4,6 @@ import Icon from './icon';
 import { mq } from './_shared/media';
 import { StyledH1 } from './_shared/styled-headings';
 import { StyledSection } from './_shared/styled-section';
-import { Helix } from '../images/helix.jpg';
-
-
 
 const StyledContactSection = styled(StyledSection)`
   margin-top: 70px;

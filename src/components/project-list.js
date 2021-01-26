@@ -12,6 +12,11 @@ const StyledProject = styled.article`
   display: flex;
   flex-direction: column;
   padding-top: 2.5rem;
+  background-image: linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(10px);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 25px;
 `;
 const StyledHeader = styled.header`
   display: flex;
@@ -41,6 +46,7 @@ const StyledInfoContainer = styled.section`
 `;
 
 const StyledProjectText = styled(StyledTextSection)`
+  background-color: var(--bg-color);
   > p {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -65,7 +71,13 @@ const ProjectList = ({ projects }) => {
           </StyledContentLink>
           <StyledLinkContainer>
             {repoLink && (
-              <a href={repoLink} target="_blank" rel="noopener noreferrer" title="Repository Link" aria-label={repoLinkLabel}>
+              <a
+                href={repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Repository Link"
+                aria-label={repoLinkLabel}
+              >
                 <Icon icon="github" prefix="fab" />
               </a>
             )}

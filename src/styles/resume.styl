@@ -2,7 +2,7 @@
   display flex
   flex-direction column
   align-items center
-  padding 3em
+  padding-bottom 3em
   background-image url('../images/nebula_bg.jpg')
   background-position center
   background-attachment fixed
@@ -10,47 +10,47 @@
   background-color var(--bg-content-color)
 
 .card
+  max-width 75%
   background-image linear-gradient(to bottom right, rgba(46, 49, 49, 0.6), rgba(0, 0, 0, 0.6))
   backdrop-filter blur(10px)
   background-clip padding-box
   padding 3em
-  margin 3em
+  margin 2em
   border-radius 3em
   border 2px solid rgba(189, 195, 199, 0.3)
-h1, h2, h3
-  text-align center
-  margin 0 0 0.5em 0
-tr
-  display flex
-  flex-wrap wrap
-  justify-content space-between
-  padding 0.5em
-section
-  padding 1em 0 1em 0
-
-.data-left
-  color var(--primary-color)
-
-.data-right
-  text-align right
-
+  h1, h2, h3
+    text-align center
+    margin 0 0 0.5em 0
+  tr
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    padding 0.5em
+  section
+    padding 1em 0 1em 0
+  .data-left
+    color var(--primary-color)
+  .data-right
+    text-align right
+    max-width 50%
 
 .res-comps
+  min-width 50vw
   display flex
   flex-wrap wrap
   justify-content space-between
   ul
-    max-width 50%
     text-align left
 
 .res-co-location
+  min-width 50vw
   display flex
   justify-content space-between
 
 .res-co-date
 
 .res-sch-date
-  min-width 70vw
+  min-width 50vw
   display flex
   flex-direction row
   justify-content space-between

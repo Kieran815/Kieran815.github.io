@@ -2,15 +2,14 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: 'Kieran Milligan, Web Developer',
-    titleTemplate: '%s · Home',
-    image: '/images/logo.png',
+    titleTemplate: 'Kieran Milligan · JavaScript Developer',
+    image: '/images/rocket.svg',
     author: 'Kieran Milligan',
     description: 'Project Portfolio for Kieran M Milligan, JavaScript and Web Developer',
     url: 'https://kmilligan.info',
     paginationPageSize: 4, // Amount of posts displayed per listing page.
   },
   plugins: [
-    
     `gatsby-plugin-stylus`,
     `gatsby-plugin-react-helmet`,
     {

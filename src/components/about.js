@@ -7,7 +7,6 @@ import { StyledH1, StyledH2 } from './_shared/styled-headings';
 import { StyledStaticImageContainer } from './_shared/styled-image-container';
 import { StyledSection } from './_shared/styled-section';
 
-
 const StyledAboutContainer = styled.article`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -24,7 +23,7 @@ const StyledContainer = styled.div`
   border-radius: 3em;
   border: 2px solid rgba(189, 195, 199, 0.3);
   backdrop-filter: blur(10px);
-`
+`;
 
 const StyledTextSection = styled.section`
   white-space: pre-line;
@@ -41,19 +40,19 @@ const About = ({ data }) => {
   return (
     <StyledSection id="about">
       <StyledContainer>
-      <StyledH1>About Me</StyledH1>
-      <StyledAboutContainer>
-        {image && (
-          <StyledStaticImageContainer>
-            <Img fluid={image} objectFit="contain" />
-          </StyledStaticImageContainer>
-        )}
-        <div>
-          <StyledH2>{title}</StyledH2>
-          <StyledTextSection dangerouslySetInnerHTML={{ __html: html }} />
-          <TechList techs={techs} />
-        </div>
-      </StyledAboutContainer>
+        <StyledH1>About Me</StyledH1>
+        <StyledAboutContainer>
+          {image && (
+            <StyledStaticImageContainer>
+              <Img fluid={image} objectFit="contain" />
+            </StyledStaticImageContainer>
+          )}
+          <div>
+            <StyledH2>{title}</StyledH2>
+            <StyledTextSection dangerouslySetInnerHTML={{ __html: html }} />
+            <TechList techs={techs} />
+          </div>
+        </StyledAboutContainer>
       </StyledContainer>
     </StyledSection>
   );

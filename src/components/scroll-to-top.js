@@ -6,12 +6,14 @@ import { flexCenter } from './_shared/styled-mixins';
 
 const StyledContainer = styled.div`
   ${flexCenter};
+  border-radius: 10px;
   padding: 0.5rem;
   cursor: pointer;
   color: var(--title-color);
-
+  background-color: var(--bg-color);
   &:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
   }
 `;
 

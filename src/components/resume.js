@@ -10,6 +10,7 @@ const Resume = () => {
         <h1 className="res-hl" style={{ color: 'white' }}>
           Kieran Milligan
         </h1>
+        <h2 className="res-hl">Full Stack Web Applications Developer</h2>
         <div className="res-hl-con">
           <a href="https://www.google.com/maps/@41.9780324,-87.6462852,12z" target="_blank" rel="noopener noreferrer">
             Chicago, IL
@@ -21,15 +22,6 @@ const Resume = () => {
             LinkedIn
           </a>
         </div>
-      </section>
-
-      <section className="card">
-        <h2 className="res-hl">Full Stack Web Applications Developer</h2>
-        <p>
-          Creative web developer dedicated to building and optimizing the performance of user-centric, high-impact
-          websites for nationwide, F500 and global companies. Leverage technical, analytical and problem-solving skills
-          to create dynamic, high-speed websites, apps and platforms fueling competitive advantage and revenue growth.
-        </p>
       </section>
 
       <section className="card">
@@ -154,7 +146,11 @@ const Resume = () => {
         <section className="res-exp">
           <div className="res-co-location">
             <p>
-              <strong>Amazon Pop-Up</strong>
+              <strong>
+                <a href="https://www.amazon.com/b?ie=UTF8&node=20647331011" target="_blank" rel="noopener noreferrer">
+                  Amazon Pop-Up
+                </a>
+              </strong>
             </p>
             <p>
               <strong>Tinley Park, IL</strong>
@@ -181,7 +177,11 @@ const Resume = () => {
         <section className="res-exp">
           <div className="res-co-location">
             <p>
-              <strong>Convergy's</strong>
+              <strong>
+                <a href="https://www.linkedin.com/company/convergys/" target="_blank" rel="noopener noreferrer">
+                  Convergys
+                </a>
+              </strong>
             </p>
             <p>
               <strong>Hazelwood, MO</strong>
@@ -208,7 +208,11 @@ const Resume = () => {
         <section className="res-exp">
           <div className="res-co-location">
             <p>
-              <strong>IATSE Local #6</strong>
+              <strong>
+                <a href="https://www.iatse.net/directory/local-6" target="_blank" rel="noopener noreferrer">
+                  IATSE Local #6
+                </a>
+              </strong>
             </p>
             <p>
               <strong>St. Louis, MO</strong>
@@ -352,7 +356,7 @@ const Resume = () => {
       <br />
       <section className="resume-link">
         <a
-          href="https://docs.google.com/document/d/1iNflTwAc3fSAzJ2OpGIHM9gRDLjK6CbTY7GYM6OllW8/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1dMOKzJQLo4eGZmBQE9VQQYURwEdtj9Qp/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
