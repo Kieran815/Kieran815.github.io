@@ -1,6 +1,6 @@
 ---
-featured: true
-date: '2020-08'
+featured: false
+date: '2020-05'
 title: 'Comics Quiz'
 cover_image: './images/comics_quiz.jpg'
 repo_link: 'https://github.com/kieran815/quiz-game/'

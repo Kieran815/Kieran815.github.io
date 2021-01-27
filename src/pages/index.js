@@ -22,16 +22,14 @@ const Index = ({ data }) => {
     ctaLink: data.hero.frontmatter.cta_link,
   };
 
-
-
   return (
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
       <ProgressBar />
       <div className="parallaxOne">
-      <Hero data={heroData} />
+        <Hero data={heroData} />
       </div>
-      <Quotes/>
+      <Quotes />
       <About data={data.about} />
       <FeaturedProjects featured={data.featuredProjects.nodes} />
       <Resume />

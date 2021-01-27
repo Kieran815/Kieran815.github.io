@@ -1,6 +1,6 @@
 ---
 featured: true
-date: '2020-03'
+date: '2020-09'
 title: 'FreeCodeCamp - Chicago Loop'
 cover_image: './images/fcc-chicago.png'
 repo_link: 'https://github.com/kieran815/fcc-chicago'
