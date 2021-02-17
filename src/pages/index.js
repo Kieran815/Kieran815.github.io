@@ -31,8 +31,8 @@ const Index = ({ data }) => {
       </div>
       <Quotes />
       <About data={data.about} />
-      <FeaturedProjects featured={data.featuredProjects.nodes} />
       <Resume />
+      <FeaturedProjects featured={data.featuredProjects.nodes} />
       <Contact data={data.contact} />
     </Layout>
   );

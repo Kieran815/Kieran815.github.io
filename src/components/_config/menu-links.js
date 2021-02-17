@@ -5,14 +5,14 @@ export const indexMenuLinks = [
     icon: 'user-tie',
   },
   {
-    name: 'Projects',
-    link: '/#projects',
-    icon: 'terminal',
-  },
-  {
     name: 'Resume',
     link: '/#resume',
     icon: 'file-word',
+  },
+  {
+    name: 'Projects',
+    link: '/#projects',
+    icon: 'terminal',
   },
   {
     name: 'Contact',
